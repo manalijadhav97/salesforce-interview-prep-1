@@ -26,6 +26,7 @@
 1. Behavioural Section
     1. How to answer behavioral questions
     1. Tell me about yourself
+    1. Why Do You Want to Work Here?
     1. Question to ask interviewer after the interview
     1. FA Behavioural Qs
 1. Interview Experiences
@@ -318,6 +319,8 @@
     - `render()`
     - `renderedCallback()`
 
+1. Slots - when slots should be used? give an example of an use case so
+
 1. `@salesforce` Modules
 
     - `@salesforce/apex`
@@ -449,6 +452,7 @@ https://www.sfdc99.com/2014/12/18/common-interview-questions-for-salesforce-deve
    Task - What was the goal
    Action - What did you do?
    Result - What was the outcome?
+
 1. Tell me about yourself
 
     Explain -
@@ -464,6 +468,8 @@ https://www.sfdc99.com/2014/12/18/common-interview-questions-for-salesforce-deve
 
     Must Watch -
     https://www.youtube.com/watch?v=es7XtrloDIQ
+
+1. Why Do You Want to Work Here?
 
 1. Question to ask interviewer after the interview
 
@@ -685,3 +691,10 @@ These were pretty basic and simple questions with one or advanced questions. Any
 | ---- | --- |
 | With |     |
 | Time |     |
+
+RoadMap -
+
+1. LinkedIn Profile
+2. Resume
+3. Technical Skills
+4. Behavioural
