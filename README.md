@@ -264,7 +264,7 @@
 
 ## SOQL & SOSL
 
-1. Try writing complex queries -
+1. Try writing complex queries using **Apex** -
 
     - Query all accounts with all related contacts
     - Query all accounts with count of all related contacts
@@ -353,57 +353,50 @@
 1. `@salesforce` Modules
 
     - `@salesforce/apex`
-    - `@salesforce/apexContinuation`
-    - `@salesforce/client/formFactor`
-    - `@salesforce/community`
-    - `@salesforce/contentAssetUrl`
     - `@salesforce/label`
-    - `@salesforce/messageChannel`
     - `@salesforce/resourceUrl`
+    - `@salesforce/messageChannel`
     - `@salesforce/schema`
     - `@salesforce/user`
     - `@salesforce/userPermission`
     - `@salesforce/customPermission`
+    - `@salesforce/apexContinuation`
+    - `@salesforce/client/formFactor`
+    - `@salesforce/community`
+    - `@salesforce/contentAssetUrl`
+    
 
 1. [Lightning Locker Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.security_locker_service)
 
-## Lightning Aura Components
-
-1. Events Types
-1. Event Propagation
-1. Component Bundle
-1. Aura Methods
-1. Aura Action
-1. setStorable
-1. setBackground
-1. Interfaces
-1. Limits
-1. considerations
-
-## Visualforce
-
-1. View State - How to optimize? Transient keyword
-1. Waiting State -
-1. actionFunction
-1. actionSupport
-1. actionPollar
-1. StandardController
-1. CustomController
-1. Page Reference Class
-1. Extentions (Standard and Custom)
 
 ## Integration
 
-1. Workflow outbound messages
-1. Apex callouts
-1. Apex Web Services
-1. Platform Events
-1. Salesforce Connect
+What are types of Integration?
+    - Inbound
+    - Outbound
+    
+Communication types - 
+    - Synchronous
+    - Asynchronous
+
+What type of Integrations you should know?
+
+1. Workflow outbound messages - outbound
+1. Apex callouts (outbound) and Web Services (inbound)
+1. Salesforce Connect - both inbound and outbound depending on use case
+    Salesforce Connect provides seamless integration of data across system boundaries by letting your users view, search, and modify data that’s stored outside your Salesforce org. For example, perhaps you have data that’s stored on premises in an enterprise resource planning (ERP) system. Instead of copying the data into your org, you can use external objects to access the data in real time via web service callouts.
+    Use Salesforce Connect when:
+    -   You have a large amount of data that you don’t want to copy into your Salesforce org.
+    -   You need small amounts of data at any one time.
+    -   You want real-time access to the latest data.
+
+Authentication and Authorization - 
 1. OAuth flows
     - Web Server flow
     - JWT Server to Servier integration
+    
+REST Methods - 
 1. PUT vs PATCH
-
     - Short difference - PUT does an UPSERT with complete payload.
       Meaning if the request payload is -
       Request endpoint - /person/1
@@ -424,6 +417,8 @@
     }
     The path will only update the name and not whole object.
     Also, if the resource does not exists, then it will fail.
+    
+1. [Architect Stuff] Platform Events - https://www.apexhours.com/integrating-with-salesforce-using-platform-events/
 
 ## Misc
 
@@ -437,6 +432,32 @@
     -   Only take necessary data and run a loop
 
 -   [You have uncomitted work pending](https://help.salesforce.com/articleView?id=000328873&type=1&mode=1)
+
+## Visualforce
+
+1. View State - How to optimize? Transient keyword
+1. Waiting State -
+1. actionFunction
+1. actionSupport
+1. actionPollar
+1. StandardController
+1. CustomController
+1. Page Reference Class
+1. Extentions (Standard and Custom)
+
+## Lightning Aura Components
+
+1. Events Types
+1. Event Propagation
+1. Component Bundle
+1. Aura Methods
+1. Aura Action
+1. setStorable
+1. setBackground
+1. Interfaces
+1. Limits
+1. considerations
+
 
 ### FA Technical Qs
 
