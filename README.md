@@ -433,18 +433,6 @@ REST Methods -
 
 -   [You have uncomitted work pending](https://help.salesforce.com/articleView?id=000328873&type=1&mode=1)
 
-## Visualforce
-
-1. View State - How to optimize? Transient keyword
-1. Waiting State -
-1. actionFunction
-1. actionSupport
-1. actionPollar
-1. StandardController
-1. CustomController
-1. Page Reference Class
-1. Extentions (Standard and Custom)
-
 ## Lightning Aura Components
 
 1. Events Types
@@ -457,6 +445,19 @@ REST Methods -
 1. Interfaces
 1. Limits
 1. considerations
+
+
+## Visualforce
+
+1. View State - How to optimize? Transient keyword
+1. Waiting State -
+1. actionFunction
+1. actionSupport
+1. actionPollar
+1. StandardController
+1. CustomController
+1. Page Reference Class
+1. Extentions (Standard and Custom)
 
 
 ### FA Technical Qs
