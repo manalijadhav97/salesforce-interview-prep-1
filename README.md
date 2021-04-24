@@ -250,6 +250,7 @@
 1.  Limit Class
 1.  Test class
     -   startTest() - stopTest() - @isTest - seeAllData - Setup Objects
+1.  [Apex Best Practices](https://developer.salesforce.com/blogs/developer-relations/2015/01/apex-best-practices-15-apex-commandments.html) - This is a must read. you should atleast know 5 apex best practices. 
 
 ### [Annotations](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation.htm)
 
@@ -305,12 +306,12 @@
     `myComponent`
 
     - `├──myComponent.html` - HTML File (Optional)
-      `├──myComponent.js` - JavaScript File (Required)
-      `├──myComponent.js-meta.xml` - Configuration File (Optional)
-      `├──myComponent.css` - CSS File (Optional)
-      `|──myComponent.svg` - SVG Icon (Optional)
-      `|──shared_code.js` - JavaScript File (Optional - to share code)
-      `└──moreSharedCode.js` - JavaScript File (Optional - to share code)
+    - `├──myComponent.js` - JavaScript File (Required)
+    - `├──myComponent.js-meta.xml` - Configuration File (Optional)
+    - `├──myComponent.css` - CSS File (Optional)
+    - `|──myComponent.svg` - SVG Icon (Optional)
+    - `|──shared_code.js` - JavaScript File (Optional - to share code)
+    - `└──moreSharedCode.js` - JavaScript File (Optional - to share code)
 
 1. Events
 
