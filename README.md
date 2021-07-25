@@ -433,6 +433,9 @@ REST Methods -
     -   Only take necessary data and run a loop
 
 -   [You have uncomitted work pending](https://help.salesforce.com/articleView?id=000328873&type=1&mode=1)
+-   Mixed DML Statement
+-   [Mixed DML Operations in Test Methods](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects_test_methods.htm)
+-   [sObjects That Cannot Be Used Together in DML Operations](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects.htm)
 
 ## Lightning Aura Components
 
