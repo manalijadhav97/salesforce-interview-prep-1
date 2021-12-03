@@ -15,3 +15,5 @@
 2)Read/Write
 
 ### Hierarchy is only available for User obect
+
+[Considerations for Relationships](https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm&type=5)
