@@ -23,7 +23,7 @@ Custom objects are objects that you create to store information that’s specifi
   - Number
   - Text
 
-1. Custom Settings and Custom Medatada, thier differences and limitations.
+1. [Custom Settings and Custom Medatada, thier differences and limitations](https://www.biswajeetsamal.com/blog/difference-between-custom-settings-and-custom-metadata-types/).
 
 1. What is Data Skews? What are the types?
   - Ownership Skew - Large number of records (more than 10000) are assigned to single user
