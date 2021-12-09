@@ -12,7 +12,7 @@
     -   **View/Modify All** - The “View All” and “Modify All” permissions ignore sharing rules and settings, allowing administrators to grant access to records associated with a given object across the organization.
     -   **View/Modify All Data** - Managing all data in an organization; for example, data cleansing, deduplication, mass deletion, mass transferring, and managing record approvals.
 
-    .  Field Level Security
+1. Field Level Security - Can be provided using profiles and permission sets.
 
 1.  Record Level Security
 
@@ -34,3 +34,26 @@
     -   What is the use for using apex managed sharing? Let us say you create/update an account and based on total Amount of the related opportunities you need to assign that account to particular Sales Rep programatically. This cannot be achieved using any of the declarative tools.
 
 1.  Must Read - [Salesforce Data Securirty Model Explained](https://developer.salesforce.com/blogs/developer-relations/2017/04/salesforce-data-security-model-explained-visually.html)
+
+## Difference b/w Profile and Permission Set
+
+The key UI difference in my experience is that only profiles can be used to control page layout assignment.
+
+Things that are in profile but not in permission sets -
+Page layout assignment
+Desktop client access
+Login Hours
+Login IP Ranges
+Session settings
+Password policies
+Delegated authentication
+Two-factor authentication with Single Sign on
+Organization-Wide Email Addresses are assignable by Profile only (idea to fix this)
+Default record type per object
+Profile specific search layouts (winter 20)
+
+Permission sets and profiles have come very close to parity. Now that record type assignment can be done in either, it's just a few key things that remain, and these likely would remain on profile, as a user can only be assigned one page layout at a time, so it wouldn't really make sense on a permission set.
+
+FWIW, besides for the page layouts, which I knew about from general experience, I came up w this list by looking at a perm set and a profile in the enhanced editor and noted which top-level sections were missing from perm set.
+
+[Source](https://salesforce.stackexchange.com/questions/119220/exclusive-differences-profiles-vs-permission-sets/119297)
