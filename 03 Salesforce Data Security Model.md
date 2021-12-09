@@ -56,4 +56,12 @@ Permission sets and profiles have come very close to parity. Now that record typ
 
 FWIW, besides for the page layouts, which I knew about from general experience, I came up w this list by looking at a perm set and a profile in the enhanced editor and noted which top-level sections were missing from perm set.
 
+Also, Profile is the user;s base set of permissions and all users are assigned to one. A Permission set is just a way to give a user or a set of users extended permissions without granting them to the entire group of users with a certain Profile.
+ 
+
+Key example would be that 5 users share the same Profile which does not have permission to create custom report types, but one of the 5 users needs to create custom report types. Rather than create a new Profile just for this one user, you would create a Permission Set that included the Create Custom Report Types permission and assign it to that one user.
+ 
+
+Profiles can be used to give or take away permission from the users assigned to it. Permission Sets can only give or extend permission to the users assigned to it.
+
 [Source](https://salesforce.stackexchange.com/questions/119220/exclusive-differences-profiles-vs-permission-sets/119297)
