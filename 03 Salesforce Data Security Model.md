@@ -40,17 +40,17 @@
 The key UI difference in my experience is that only profiles can be used to control page layout assignment.
 
 Things that are in profile but not in permission sets -
-Page layout assignment
-Desktop client access
-Login Hours
-Login IP Ranges
-Session settings
-Password policies
-Delegated authentication
-Two-factor authentication with Single Sign on
-Organization-Wide Email Addresses are assignable by Profile only (idea to fix this)
-Default record type per object
-Profile specific search layouts (winter 20)
+- Page layout assignment
+- Desktop client access
+- Login Hours
+- Login IP Ranges
+- Session settings
+- Password policies
+- Delegated authentication
+- Two-factor authentication with Single Sign on
+- Organization-Wide Email Addresses are assignable by Profile only (idea to fix this)
+- Default record type per object
+- Profile specific search layouts (winter 20)
 
 Permission sets and profiles have come very close to parity. Now that record type assignment can be done in either, it's just a few key things that remain, and these likely would remain on profile, as a user can only be assigned one page layout at a time, so it wouldn't really make sense on a permission set.
 
