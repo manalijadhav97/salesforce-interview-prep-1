@@ -46,3 +46,8 @@ REST Methods -
     }
     The path will only update the name and not whole object.
     Also, if the resource does not exists, then it will fail.
+    
+## Named Credentials
+Benefit of using Named credentials is we do not have to explicitly specify remote site settings and also they can store the password safely. It takes care of the authentication as well.
+
+state param in oAuth is used to secure the request. If the state param is sent in the request and same state param is responded back. If the param is tampered with, then the request is considered compromised.
