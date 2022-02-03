@@ -94,3 +94,5 @@
 - Mixed DML Statement
 - [Mixed DML Operations in Test Methods](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects_test_methods.htm)
 - [sObjects That Cannot Be Used Together in DML Operations](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dml_non_mix_sobjects.htm)
+
+### [SOLID Principles](https://www.youtube.com/watch?v=yxf2spbpTSw)
