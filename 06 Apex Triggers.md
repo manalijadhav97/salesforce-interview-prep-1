@@ -14,3 +14,12 @@
   1. Processes
   1. Escalation Rules
   1. Roll-Up Summary Fields
+
+
+### When should you use before and after triggers?
+
+The rule of thumb is we should use before triggers if we need to add any custom validations on the record or update the field of the same record.
+Use the after trigger for all other scenarios.
+
+Why should we use after trigger for all other scenarios? For example, creating a contact after an account is created. You might ask.
+The simple reason is there could be some calculations/updates happening on the same record by after trigger/flows/processes etc. And we do not want to impact the result of those actions because of our code in before trigger.
