@@ -73,6 +73,11 @@
     - What is a cron expression?
     - What is the maximum number of Apex classes scheduled concurrently? 100
 
+
+### When should we use which asynchronous apex
+![image](https://user-images.githubusercontent.com/34469349/152400033-a64f6099-4c49-48bf-92e0-b9b4cf57b732.png)
+
+
 ### Important Interfaces (Frequently Used)
 
 1. Batchable
