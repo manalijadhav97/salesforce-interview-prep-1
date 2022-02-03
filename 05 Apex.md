@@ -80,11 +80,14 @@
 
 ### Important Interfaces (Frequently Used)
 
-1. Batchable
-1. Queueable
-1. Schedulable
-1. HttpCalloutMock
-1. Custom Interfaces
+1. Database.Batchable - To impletement batch class
+2. Database.Stateful - To maintain the state of variable across multiple batches
+3. Database.AllowsCallouts - To make callouts from batch apex
+4. Database.RaisesPlatformEvents - To publish platform events from batch
+5. Queueable - To implement queueable class
+6. Schedulable - To implement schedular class 
+7. HttpCalloutMock - To mock http request
+8. Custom Interfaces
 
 - [Unable to lock row - Record currently unavailable errors](https://help.salesforce.com/articleView?id=000338933&type=1&mode=1)
 
