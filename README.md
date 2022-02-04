@@ -277,15 +277,6 @@ Follow up questions -
 1. When was a time when you took some initiative and it was implemented? (this is a leadership question)
 1. Any questions for me?
 
----
-
-#### 2. Zoom
-
-##### Round 1 (Screening + Platform Knowledge ) -
-
-|      |                |
-| ---- | -------------- |
-| With | Hiring Manager |
 | Time | 1 Hour         |
 
 1. Tell me about your current role and responsibilities.
@@ -304,28 +295,6 @@ Follow up questions -
 1. Why do you want to leave your current organization?
 1. Any questions for me?
 
----
-
-#### 3. Expedia
-
-##### Round 1 (Screening + Platform Knowledge )
-
-|      |                             |
-| ---- | --------------------------- |
-| With | Online HackeRrank           |
-| Time | 30 Minutes for 30 Questions |
-
-Questions were on the Salesforce topics such as Apex code output, Triggers, SOQL, Visualforce, LWC and LWC Testing, Integration scenarios.
-These were pretty basic and simple questions with one or advanced questions. Anyone with 1.5+ experince should be able to answer.
-
-#### 4. Workday
-
-##### Round 1 ()
-
-|      |     |
-| ---- | --- |
-| With |     |
-| Time |     |
 
 RoadMap -
 
@@ -333,3 +302,25 @@ RoadMap -
 2. Resume
 3. Technical Skills
 4. Behavioural
+
+
+# Behavioural
+
+Tell Me about yourself
+1. Why are we using Salesforce - reduce average case hadling time, out of the box features, architeture, cross functional teams, TMs love this since it is all info is presented
+2. Explain what are you and what do you currenty? what is your team's current goal? increase the enablement
+3. Explain leadership activities and initiatives you took
+4. Explain about past - concise, relevant, finish under 1 minute, select one key highlight from each experience
+5. Explain about future - as someone dong coding i'd like to apply my knowledge. my experience combined by international background makes me a perfect fit for this position.
+6. Highlight something you have done - increased overall to 40%
+
+
+Why do you want to work here? (why are you interested in this position)
+Migrate to Germenay for better quality of life
+one of the fastest growing Startup in germany - i have been following DH for quite a long and the WLB as well as comapanies initiatives 
+
+
+Conflict
+Aaction
+Result
+Learning
