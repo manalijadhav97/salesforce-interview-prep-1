@@ -307,12 +307,21 @@ RoadMap -
 # Behavioural
 
 Tell Me about yourself
-1. Why are we using Salesforce - reduce average case hadling time, out of the box features, architeture, cross functional teams, TMs love this since it is all info is presented
 2. Explain what are you and what do you currenty? what is your team's current goal? increase the enablement
 3. Explain leadership activities and initiatives you took
 4. Explain about past - concise, relevant, finish under 1 minute, select one key highlight from each experience
 5. Explain about future - as someone dong coding i'd like to apply my knowledge. my experience combined by international background makes me a perfect fit for this position.
 6. Highlight something you have done - increased overall to 40%
+
+Hi, my name is Girish Shinde and I have a total of 5 years of experience in Salesforce and Software Industry in all sorts of roles such as developer, scrum master and recently a product manager. I started my Salesforce development career 5 years ago in Accenture. While in Accenture, I was working for VMware where I worked on multiple projects in Service cloud including Knowledge Management Implementation and Classic to Lightning Migration. I later went on to join VMware in the same team where I was already working in Accenture. There, I took on the role of dev lead from India site and worked on projects such as cross platfrom integration and performance optimization.
+
+After spending more than 4 years in VMware, I joined PayPal as a Senior Software Engineer, my current role is to lead and deliver different business process while working with other cross functional teams such as business, product, UX and data teams. In the period of last 9 month, I have delivered 3 key business processes and currently working on the 4th. Sicne I wanted to understand more of the business side, recenty, I took on a new challenge of working as a Product Manager while continueing the dev lead role.
+
+I wish to use my technical acumen to contrinute to a team like Delivery Hero that works at scale and creates a positive impact on a society.
+
+
+1. Why are we using Salesforce - reduce average case hadling time, out of the box features, architeture, cross functional teams, TMs love this since it is all info is presented
+
 
 
 Why do you want to work here? (why are you interested in this position)
