@@ -1,4 +1,4 @@
-# Objects
+# Objects 
 
 Objects are containers for your information, but they also give you special functionality. For example, when you create a custom object, the platform automatically builds things like the page layout for the user interface.
 
@@ -59,10 +59,8 @@ More on this in Database section
 # Custom Settings and Custom Metadata
 
 [Custom Metadata Types](https://www.salesforceben.com/custom-metadata-types/)
+
 Limitations mentioned in above post are not valid anymore as the article is dated. However, it gives pretty good understanding of what custom metadata is and when to use it.
-
-
-
 
 [Custom Settings and Custom Medatada, thier differences and limitations](https://www.biswajeetsamal.com/blog/difference-between-custom-settings-and-custom-metadata-types/).
 

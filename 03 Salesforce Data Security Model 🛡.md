@@ -1,4 +1,4 @@
-# Salesforce Data Security Model
+# :shield: Salesforce Data Security Model :shield:
 
 ## Org Level Security
 
@@ -17,35 +17,13 @@
 - **View/Modify All** - The “View All” and “Modify All” permissions ignore sharing rules and settings, allowing administrators to grant access to records associated with a given object across the organization.
 - **View/Modify All Data** - Managing all data in an organization; for example, data cleansing, deduplication, mass deletion, mass transferring, and managing record approvals.
 
-## Field Level Security
-
-## Record Level Security
-
-1.  Organization Wide Defaults
-
-1.  Role Hierarchies
-
-    - Check grant access using role hierarchies in Sharing Settings (OWD)
-
-1.  Sharing Rules
-
-    - Ownership Based
-    - Criteria Based
-
-1.  Manual Sharing
-
-1.  [Apex Managed Sharing](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_bulk_sharing_creating_with_apex.htm)
-
-    - What is the use for using apex managed sharing? Let us say you create/update an account and based on total Amount of the related opportunities you need to assign that account to particular Sales Rep programatically. This cannot be achieved using any of the declarative tools.
-
-1.  Must Read - [Salesforce Data Securirty Model Explained](https://developer.salesforce.com/blogs/developer-relations/2017/04/salesforce-data-security-model-explained-visually.html)
-
 ## Difference b/w Profile and Permission Set
 
 The key UI difference in my experience is that only profiles can be used to control page layout assignment.
 
 Things that are in profile but not in permission sets -
 - Page layout assignment
+- Role assignment
 - Desktop client access
 - Login Hours
 - Login IP Ranges
@@ -70,3 +48,38 @@ Key example would be that 5 users share the same Profile which does not have per
 Profiles can be used to give or take away permission from the users assigned to it. Permission Sets can only give or extend permission to the users assigned to it.
 
 [Source](https://salesforce.stackexchange.com/questions/119220/exclusive-differences-profiles-vs-permission-sets/119297)
+
+
+## Field Level Security :shield:
+Field level security can be controlled by profiles and permission sets.
+
+## Record Level Security
+
+1.  Organization Wide Defaults
+
+1.  Role Hierarchies
+
+    - Check grant access using role hierarchies in Sharing Settings (OWD)
+
+1.  Sharing Rules
+
+    - Ownership Based
+    - Criteria Based
+    - Guest user sharing rules
+
+1.  Manual Sharing
+
+1.  [Apex Managed Sharing](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_bulk_sharing_creating_with_apex.htm)
+
+    - What is the use for using apex managed sharing? Let us say you create/update an account and based on total Amount of the related opportunities you need to assign that account to particular Sales Rep programatically. This cannot be achieved using any of the declarative tools.
+
+1.  Must Read - [Salesforce Data Securirty Model Explained](https://developer.salesforce.com/blogs/developer-relations/2017/04/salesforce-data-security-model-explained-visually.html)
+
+
+### Public Groups vs Queues
+
+TL;DR; Queues are used to assign a record and groups are used to provide access.
+
+Queues are typically used when you want to assign a record to a bunch of users. With the help of queues you can assign a record to multiple users (using queues) so that any member of the queue can work on the record. It also allows the users to have there seperate views.
+
+Group on the other hand are used more for a sharing purpose. They are not the owner of the records (like queue) but can share the records (in terms of access)
