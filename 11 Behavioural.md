@@ -34,11 +34,11 @@
 
 
 Hi, my name is Girish Shinde and I have a total of 5 years of experience in Salesforce and Software Industry in all sorts of roles such as developer, scrum master and recently a product manager. 
-I started my Salesforce development career 5 years ago in Accenture. While in Accenture, I was working for VMware where I worked on multiple projects in Service cloud including Knowledge Management Implementation and Classic to Lightning Migration. 
-I later went on to join VMware in the same team with a new role. There, I took on the role of dev lead from India site and worked on projects such as cross platfrom integration and performance optimization to enhance the customer service experience. During this time I was awarded with multiple accolades such as Accenture Apex Awards, Star Performer, and certificate of excellence for outstanding performance.
+I started my Salesforce development career 5 years ago in Accenture. While in Accenture, I was working for VMware where I worked on multiple projects in Service cloud including Knowledge Management Implementation and Classic to Lightning Migration and Experience Cloud implementation. 
+I later went on to join VMware in the same team with a new role. There, I took on the role of dev lead from India site and worked on projects such as cross platfrom integration and performance optimization to enhance the customer service experience.
 
-After spending more than 4 years in VMware, I joined PayPal as a Senior Software Engineer, where my current role is to lead and deliver different business process for customer service platform while working with other cross functional teams such as business, product, UX and domain teams. In the period of last 9 month, I have delivered 3 key business processes and currently working on the 4th. Apart from working on the business processes, I took many initatives in PayPal such as building logging frameworks for UI, cleaning organizing the codebase etc. for which I got accolades from leadership. Sicne I wanted to understand more of the business side, recenty, I took on a new challenge of working as a Product Manager while continuing the dev lead role. Apart from Salesforce, I have also volunteered in contrinuting to PayPal's internal skill exchange portal as a Java backend developer.
-
+After spending more than 4 years in VMware, I joined PayPal as a Senior Software Engineer, where my current role is to lead and deliver different business process for customer service platform along with other cross functional teams such as business, product, UX. Apart from working on the business processes, I have also been part of many initatives such as building logging frameworks for UI, cleaning organizing the codebase etc. Apart from Salesforce, I have also volunteered in contrinuting to PayPal's internal skill exchange portal as a Java backend developer.
+ Since I wanted to understand more of the business side, recenty, I took on a new challenge of working as a Product Manager while continuing the dev lead role.
 I wish to use my technical acumen to contrinute to a team like Delivery Hero that works at scale and creates a positive impact on a society.
 
 
