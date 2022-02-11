@@ -24,9 +24,15 @@
 
 1. [Lightning Data Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_ui_api)
 
-    - Standard LDS components
-    - [Wire Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_wire_service_about)
-    - [`lightning/ui*Api` Wire Adapters and Functions](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
+![image](https://user-images.githubusercontent.com/34469349/153461038-ce6ff1c6-288c-4ef0-888f-a479352d1654.png)
+
+   - Standard LDS components
+**Difference between base lightning LDS component**
+![image](https://user-images.githubusercontent.com/34469349/153460813-da92e3b3-c78a-4346-a03e-19c7a992fdf1.png)
+
+   - [Wire Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_wire_service_about)
+   - [`lightning/ui*Api` Wire Adapters and Functions](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
+
 
 1. Calling Apex from LWC
 
