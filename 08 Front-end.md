@@ -98,7 +98,21 @@ The folder and its files must have the same name, including capitalization and u
 
 ## JavaScript
 
-### primitive data types
+### data types
+   #### Primitive
+   Premitives types are those that always hold a single value and are always passed by value.
+   
+   - `number` - The number type represents both integer and floating point numbers.
+   - `bigint` - the “number” type cannot represent integer values larger than (2^53-1). BigInt type was recently added to the language to represent integers of arbitrary length.
+   - `string`
+   - `boolean`
+   - `null` - type of null returns "object" – this is an error in the language, it’s not actually an object.
+   - `undefined`
+   - `symbol`
+
+   #### Non Primitive
+   - `object`
+
 ### variable scope
 ### [closure](https://javascript.info/closure)
 ### implicit and explicit coercion
