@@ -33,7 +33,7 @@
    - [Wire Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_wire_service_about)
    - [`lightning/ui*Api` Wire Adapters and Functions](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
 
-
+**Important : What are the advantages of LDS?**
 1. Calling Apex from LWC
 
     - Use case for calling apex imparatively.
