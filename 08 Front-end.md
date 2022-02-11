@@ -6,99 +6,124 @@
 
 The folder and its files must have the same name, including capitalization and underscores.
 
-    `myComponent`
+`myComponent`
 
-    - `├──myComponent.html` - HTML File (Optional)
-    - `├──myComponent.js` - JavaScript File (Required)
-    - `├──myComponent.js-meta.xml` - Configuration File (Optional)
-    - `├──myComponent.css` - CSS File (Optional)
-    - `|──myComponent.svg` - SVG Icon (Optional)
-    - `|──shared_code.js` - JavaScript File (Optional - to share code)
-    - `└──moreSharedCode.js` - JavaScript File (Optional - to share code)
+- `├──myComponent.html` - HTML File (Optional)
+- `├──myComponent.js` - JavaScript File (Required)
+- `├──myComponent.js-meta.xml` - Configuration File (Optional)
+- `├──myComponent.css` - CSS File (Optional)
+- `|──myComponent.svg` - SVG Icon (Optional)
+- `|──shared_code.js` - JavaScript File (Optional - to share code)
+- `└──moreSharedCode.js` - JavaScript File (Optional - to share code)
 
 ### Events
    - [Lightning Message Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel)
    - Custom Events
    - PubSub Limitations - can be accessed by components from other namespaces, cannot be used inside Visualforce
+   - Event propagation and phases
 
 ### [Lightning Data Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_ui_api)
 ![image](https://user-images.githubusercontent.com/34469349/153461038-ce6ff1c6-288c-4ef0-888f-a479352d1654.png)
 
 #### Standard LDS components
+
 #### Difference between base lightning LDS component
 ![image](https://user-images.githubusercontent.com/34469349/153460813-da92e3b3-c78a-4346-a03e-19c7a992fdf1.png)
 
 #### [Wire Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_wire_service_about)
+
 #### `lightning/ui*Api` Wire Adapters and Functions](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
+
 #### Advantages of LDS
    1. No need to write any Apex class
-   1. No need to write SOQL
-   1. Field level security and record sharing is inbuilt
-   1. CRUD operation supported
-   1. Shared cache is used by all standard and custom components
-   1. Auto notification to all components
+   2. No need to write SOQL
+   3. Field level security and record sharing is inbuilt
+   4. CRUD operation supported
+   5. Shared cache is used by all standard and custom components
+   6. Auto notification to all components
 
 
 ### Calling Apex from LWC
 
-    - Use case for calling apex imparatively.
-    - Call apex imparatively and pass parameters
-    - [Client Side Caching](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.apex_result_caching) (cacheable=true & refreshApex())
+- Use case for calling apex imparatively.
+- Call apex imparatively and pass parameters
+- [Client Side Caching](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.apex_result_caching) (cacheable=true & refreshApex())
 
 ### [HTML Template Directives](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_directives)
 
 ### Decorators
 
-    - `@api`
-    - `@wire`
-    - `@track`
+- `@api`
+- `@wire`
+- `@track`
 
 ### Lifecycle Hooks
 
-    - `connectedCallback()`
-    - `constructor()`
-    - `disconnectedCallback()`
-    - `errorCallback()`
-    - `render()`
-    - `renderedCallback()`
+- `connectedCallback()`
+- `constructor()`
+- `disconnectedCallback()`
+- `errorCallback()`
+- `render()`
+- `renderedCallback()`
 
-### Slots - when slots should be used? give an example of an use case so
+### Slots
 
 ### `@salesforce` Modules
 
-    - `@salesforce/apex`
-    - `@salesforce/label`
-    - `@salesforce/resourceUrl`
-    - `@salesforce/messageChannel`
-    - `@salesforce/schema`
-    - `@salesforce/user`
-    - `@salesforce/userPermission`
-    - `@salesforce/customPermission`
-    - `@salesforce/apexContinuation`
-    - `@salesforce/client/formFactor`
-    - `@salesforce/community`
-    - `@salesforce/contentAssetUrl`
+- `@salesforce/apex`
+- `@salesforce/label`
+- `@salesforce/resourceUrl`
+- `@salesforce/messageChannel`
+- `@salesforce/schema`
+- `@salesforce/user`
+- `@salesforce/userPermission`
+- `@salesforce/customPermission`
+- `@salesforce/apexContinuation`
+- `@salesforce/client/formFactor`
+- `@salesforce/community`
+- `@salesforce/contentAssetUrl`
     
 
 ### [Lightning Locker Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.security_locker_service)
 
 ## Questions
 1. [Explain the component structure of LWC component](#component-structure)
-1. [What are the advantages of LDS?](#advantages-of-lds)
+2. [What are the advantages of LDS?](#advantages-of-lds)
+3. How to communicate from parent LWC to child LWC? How to access the child variables and methods?
+4. How to communicate from parent LWC to grand child LWC?
+5. How to communicate from child LWC to parent lwc?
+6. How to communicate from child LWC to grand parent lwc?
+7. How to communicate between sibling LWCs?
+8. How to communicate between cousin LWCs?
 
 ## JavaScript
 
-
 ### primitive data types
-### scope
+### variable scope
+### [closure](https://javascript.info/closure)
 ### implicit and explicit coercion
 ### event loop
-### callback functions, Promises, Async await
-### higher order functions
-### array methods
-### string methods
-### arrow functions
-prototypical inheritance
+### callback functions
+
+   A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. They are often used to continue code execution after an asynchronous operation has completed — these are called asynchronous callbacks.
+   
+### Promises
+   This is not 100% correct analogy but you get the point.
+   
+   Just like real life promises, JS promises are way to let promise consumer know about the asynchronous result.
+   For example, as a candidate I applied for a job position at your organization. Since, hiring activity is asynchronous, the recruiter emails me (promises) that you application is under process (executing) and they will get back (it will be settled). At this stage the promise is in pending state. Once the application is processed, the recruiter will either fulfill the promise by telling that they are scheduling next round of technical discussion or reject the promise by letting me know the reason. Either way, I have the result from recruiter and I can take my next action based on the result such as prepare for next round or apply at different organization.
+
+### Async await
+### [higher order functions](https://www.youtube.com/watch?v=80KX6aD9R7M&list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ)
+### [array methods](https://javascript.info/array-methods)
+### [string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+### [arrow functions](https://javascript.info/arrow-functions-basics)
+### [prototypical inheritance](https://javascript.info/prototypes)
+`Senior Developer Stuff below`
+### [generators](https://javascript.info/generators)
+### [Dynamic imports](https://javascript.info/modules-dynamic-imports)
+
+## [JS Desgin Patterns](https://betterprogramming.pub/javascript-design-patterns-25f0faaaa15)
 
 https://github.com/leonardomso/33-js-concepts
 
@@ -128,5 +153,3 @@ https://github.com/leonardomso/33-js-concepts
 1. CustomController
 1. Page Reference Class
 1. Extentions (Standard and Custom)
-
-
