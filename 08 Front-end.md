@@ -32,7 +32,7 @@ The folder and its files must have the same name, including capitalization and u
 
 #### [Wire Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_wire_service_about)
 
-#### `lightning/ui*Api` Wire Adapters and Functions](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
+#### [`lightning/ui*Api` Wire Adapters and Functions](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
 
 #### Advantages of LDS
    1. No need to write any Apex class
