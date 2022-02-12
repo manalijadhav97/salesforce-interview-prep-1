@@ -26,3 +26,5 @@ To convert lookup to the master-detail relationship you need to give parent reco
 ### Hierarchy is only available for User obect
 
 ###[Considerations for Relationships](https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm&type=5)
+
+### [Why use MD for many-to-many relnship in stead of lookups?](https://salesforce.stackexchange.com/questions/10166/why-does-the-documentation-stipulate-that-a-many-to-many-object-relationship-req)
