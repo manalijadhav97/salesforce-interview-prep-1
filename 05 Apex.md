@@ -52,19 +52,99 @@
    - Transactions are immediate and serial
    - Normal Governor Limits
 
-1.  Batch Apex
+## Ways to use asynchronous processing 
+   - Schedule & Batch jobs
+   - Queues
+   - @future
+   - Change Data Capture – Apex Triggers (Summer ’19)
+   - Platform Events – Event Based
+   - Continuations (UI)
+   - 
+### Why to use Anyc process Scenarios
+Integrations to External Applications
+Long running processes
+Mixed DML Operations
+Large volume of data loads & transactions
 
-    - Can we call another batch class from a batch class? - Yes, it is called batch chaining
-    - Can we call future method from a batch? - No we cannot call a future method from a batch
-    - Can we make a callout from a batch apex? How?
+
+### Future Method
+A “set it and forget it” method
+Call it and the async job is launched
+No ability to monitor the job
+Cannot chain @future calls
+A public static method, decorated with @future
+Arguments: Primitives (Integer, String, etc.)
+Collections of primitives (List, Map, Set)
+NOT SObjects or Apex objects
+You can use JSON.serialize() and pass in a String
+Returns void
+
+
+### Queueable Apex
+A class and method that can be added to the queue to be executed
+It’s monitorable and abortable
+It’s chainable
+A public class that implements the Queueable interface
+Includes an execute method that accepts only a QueueableContext parameter
+The execute method can access instance properties for the class
+Returns void
+Launch by calling System.enqueueJob(cls) with an instance of the class.
+Returns an AsyncApexJob Id
+
+
+### Batch Apex
+A technique designed specifically for:
+Processing large numbers of records
+Doing more work than can be done in a single transaction
+It’s monitorable and abortable
+A global class that implements the Database.Batchable interface
+Includes:
+
+Start method – identifies the scope (list of data to be processed)
+
+Execute method – processes a subset of the scoped records
+
+Finish method – does any post-job wrap-up
+
+#### Additional interfaces:
+Database.Stateful
+Database.AllowsCallouts
+
+Launch by calling Database.executeBatch(cls) with an instance of the class and an optional scope size
+Default scope size is 200
+Max scope size is 2,000
+Returns an AsyncApexJobId
+Schedulable Class
+A global class that implements the Schedulable interface
+Includes an execute method
+Schedule by calling
+System.Schedule(‘job name’, cron expression, cls)
+Cron expression can be complex
+Returns a CronTrigger Id
+Can also schedule via the Salesforce UI
+seconds minutes hours   day_of_month   month   day_of_week   optional_year
+Run at 30 minutes past midnight on Jan 1 every year
+
+GeocodingSchedulable cls = new GeocodingSchedulable();
+System.Schedule('Geocode on Jan ',  '0  30  0  1  1  ?  *', cls);
+
+Run every hour
+System.Schedule('Geocode hourly', '0 0  *  *  *  ?  *', cls);
+
+
+
+# Batch Apex
+   - Can we call another batch class from a batch class? - Yes, it is called batch chaining
+   - Can we call future method from a batch? - No we cannot call a future method from a batch
+   - Can we make a callout from a batch apex? How?
       implement Database.AllowsCallouts
-    - What is the number of maximum batch Apex jobs that can be queued or can be active concurrently?
+   - What is the number of maximum batch Apex jobs that can be queued or can be active concurrently?
       5 jobs
-    - What is the default batch size?
+   - What is the default batch size?
       200
-    - What's the maximum batch size that you can set?
+   - What's the maximum batch size that you can set?
       (2000 in Database.executeBatch() method. If set to more than 2000, the batch size becomes 200 by default.)
-    - What are the governor limits for a batch apex?
+   - What are the governor limits for a batch apex?
 
 1.  Future Apex
 
