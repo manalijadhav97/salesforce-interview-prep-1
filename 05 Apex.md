@@ -132,8 +132,8 @@ Run every hour
 System.Schedule('Geocode hourly', '0 0  *  *  *  ?  *', cls);
 
 
-
-# Batch Apex
+### Questions
+1. Batch Apex
    - Can we call another batch class from a batch class? - Yes, it is called batch chaining
    - Can we call future method from a batch? - No we cannot call a future method from a batch
    - Can we make a callout from a batch apex? How?
