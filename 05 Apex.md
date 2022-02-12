@@ -41,6 +41,17 @@
 
 # [Asynchronous Apex](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_async_overview.htm)
 
+## Asynchronous vs Synchronous
+### Asynchronous
+   - Actions that will not block the transaction or Process
+   - Duration is not priority
+   - Higher Governor limits
+
+### Synchronous
+   - Quick and Immediate actions
+   - Transactions are immediate and serial
+   - Normal Governor Limits
+
 1.  Batch Apex
 
     - Can we call another batch class from a batch class? - Yes, it is called batch chaining
