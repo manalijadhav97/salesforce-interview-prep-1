@@ -27,4 +27,14 @@ To convert lookup to the master-detail relationship you need to give parent reco
 
 ###[Considerations for Relationships](https://help.salesforce.com/s/articleView?id=sf.relationships_considerations.htm&type=5)
 
-### [Why use MD for many-to-many relnship in stead of lookups?](https://salesforce.stackexchange.com/questions/10166/why-does-the-documentation-stipulate-that-a-many-to-many-object-relationship-req)
+# Questions
+1. [Why use MD for many-to-many relnship in stead of lookups?](https://salesforce.stackexchange.com/questions/10166/why-does-the-documentation-stipulate-that-a-many-to-many-object-relationship-req)
+2. What happens if you delete either of the parent record of a child record?
+  One Object can have only two Master-Detail relationships.
+  If we delete record A (First Master detail relationship is always primary)  – then child record c will be deleted.
+  If we delete record B then in this case also child record C will be deleted.
+  If we delete record c then only C will be deleted , master record will not be deleted.
+  If child C has two Master record A and B, Where A is primary relation then Child record C will inherit the look and feel of Parent object A.
+3. 
+
+##
