@@ -145,6 +145,8 @@ System.Schedule('Geocode hourly', '0 0  *  *  *  ?  *', cls);
    - What's the maximum batch size that you can set?
       (2000 in Database.executeBatch() method. If set to more than 2000, the batch size becomes 200 by default.)
    - What are the governor limits for a batch apex?
+   - How to use AggregateResult in batch?
+   - When to use Interable interface in batch apex?
 
 1.  Future Apex
 
@@ -178,7 +180,8 @@ System.Schedule('Geocode hourly', '0 0  *  *  *  ?  *', cls);
 5. Queueable - To implement queueable class
 6. Schedulable - To implement schedular class 
 7. HttpCalloutMock - To mock http request
-8. Custom Interfaces
+8. Callable - Enables developers to use a common interface to build loosely coupled integrations between Apex classes or triggers, even for code in separate packages.
+9. Custom Interfaces
 
 - [Unable to lock row - Record currently unavailable errors](https://help.salesforce.com/articleView?id=000338933&type=1&mode=1)
 
