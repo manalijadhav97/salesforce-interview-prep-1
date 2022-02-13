@@ -29,3 +29,8 @@ The simple reason is there could be some calculations/updates happening on the s
   1. Roll-Up Summary Fields
 
 ![image](https://user-images.githubusercontent.com/34469349/153751113-921ed046-43f6-4782-99ac-268a7e2eb3c9.png)
+
+# Platform Events and Triggers
+
+### Custom Platform Events
+### Data Capture Change Events
