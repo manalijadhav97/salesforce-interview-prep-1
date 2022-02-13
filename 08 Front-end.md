@@ -21,6 +21,7 @@ The folder and its files must have the same name, including capitalization and u
    - Custom Events
    - PubSub Limitations - can be accessed by components from other namespaces, cannot be used inside Visualforce
    - Event propagation and phases
+   - [`lightning/empApi`](https://developer.salesforce.com/docs/component-library/bundle/lightning-emp-api/documentation)
 
 ### [Lightning Data Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_ui_api)
 ![image](https://user-images.githubusercontent.com/34469349/153461038-ce6ff1c6-288c-4ef0-888f-a479352d1654.png)
