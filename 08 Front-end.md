@@ -16,7 +16,27 @@ The folder and its files must have the same name, including capitalization and u
 - `|──shared_code.js` - JavaScript File (Optional - to share code)
 - `└──moreSharedCode.js` - JavaScript File (Optional - to share code)
 
-### Events
+
+### Lifecycle Hooks
+
+- `constructor()`
+- `connectedCallback()`
+- `disconnectedCallback()`
+- `errorCallback()`
+- `render()`
+- `renderedCallback()`
+
+![image](https://user-images.githubusercontent.com/34469349/153795256-874fbf1f-325a-4df2-9a95-bf5c8cfcc0fc.png)
+
+
+### Decorators
+
+- `@api`
+- `@wire`
+- `@track`
+
+
+### LWC Communication
    - [Lightning Message Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel)
    - Custom Events
    - PubSub Limitations - can be accessed by components from other namespaces, cannot be used inside Visualforce
@@ -52,23 +72,6 @@ The folder and its files must have the same name, including capitalization and u
 
 ### [HTML Template Directives](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_directives)
 
-### Decorators
-
-- `@api`
-- `@wire`
-- `@track`
-
-### Lifecycle Hooks
-
-- `constructor()`
-- `connectedCallback()`
-- `disconnectedCallback()`
-- `errorCallback()`
-- `render()`
-- `renderedCallback()`
-
-![image](https://user-images.githubusercontent.com/34469349/153795256-874fbf1f-325a-4df2-9a95-bf5c8cfcc0fc.png)
-
 
 ### Slots
 
@@ -89,6 +92,31 @@ The folder and its files must have the same name, including capitalization and u
     
 
 ### [Lightning Locker Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.security_locker_service)
+
+### [Lightning Web Components Performance Best Practices](https://developer.salesforce.com/blogs/2020/06/lightning-web-components-performance-best-practices)
+
+### Advantages of LWC over Aura / Why do we need LWCs if we had Aura
+1. **Standardization**
+     - LWCs are built on top of web component that are natively supported by browsers. 
+     - Because of this, the code that developer writes is already browser understandable and there is no need to transpile (convert) the code into browser understandable code. 
+     - As a result of this, it is also very easy to integrate LWCs with outside applications.
+    
+2. **Performance**
+    - Since there is no abstraction layer (transpiler), the LWCs are more likey to load faster and perform better compared to Aura components. 
+    - In one [case study](https://developer.salesforce.com/blogs/2019/06/case-study-dreamhouse-gains-speed-by-switching-to-lwc), Aura components migrated to LWC showed anywhere between a 2-60% decrease in Experience Page Time (EPT).
+    
+3. **Code Reusability**
+   - Unlike Aura, one or more LWCs can be imported and used as utilities in other LWCs. 
+   - This makes it more reusable than Aura and you do not need to copy same come in each LWCs like we will have to do for Aura.
+
+4. **Inbuilt Salesforce modules** 
+   - As we know, LWCs supports `lightning/ui*Api` Wire Adapters and Functions that gives us ability to perform CRUD operations on a record as well as get object metadata, and get picklist values without having to call Apex.
+   - Also LWCs support modules such as `@salesforce/schema` to import references to Salesforce objects and fields.
+   - `@salesforce/userPermission` and `@salesforce/customPermission` - to check user permissions and custom permissions.
+   - `@salesforce/user` - to get current user id and to check if user is guest user.
+   - `@salesforce/community` - to get community info.
+   - This property makes LWCs more agile than Aura and saves lots of efforts. 
+   - Give example of Knowledge details component on case record page. How we eliminated the need of apex. If interviewer asks why did not you use base LDS component then tell that Knowledge object was not supported by LDS base component.
 
 ## Questions
 1. [Explain the component structure of LWC component](#component-structure)
@@ -172,3 +200,7 @@ https://github.com/leonardomso/33-js-concepts
 1. CustomController
 1. Page Reference Class
 1. Extentions (Standard and Custom)
+
+
+
+
