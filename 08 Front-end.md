@@ -60,12 +60,15 @@ The folder and its files must have the same name, including capitalization and u
 
 ### Lifecycle Hooks
 
-- `connectedCallback()`
 - `constructor()`
+- `connectedCallback()`
 - `disconnectedCallback()`
 - `errorCallback()`
 - `render()`
 - `renderedCallback()`
+
+![image](https://user-images.githubusercontent.com/34469349/153795256-874fbf1f-325a-4df2-9a95-bf5c8cfcc0fc.png)
+
 
 ### Slots
 
