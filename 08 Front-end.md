@@ -165,7 +165,7 @@ The folder and its files must have the same name, including capitalization and u
 ### [array methods](https://javascript.info/array-methods)
 ### [string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 ### [arrow functions](https://javascript.info/arrow-functions-basics)
-### [prototypical inheritance](https://javascript.info/prototypes)
+### [prototypal inheritance](https://javascript.info/prototypes)
 `Senior Developer Stuff below`
 ### [generators](https://javascript.info/generators)
 ### [Dynamic imports](https://javascript.info/modules-dynamic-imports)
