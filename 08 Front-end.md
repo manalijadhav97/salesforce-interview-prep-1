@@ -91,15 +91,11 @@ The folder and its files must have the same name, including capitalization and u
 - `@salesforce/contentAssetUrl`
     
 
-### [Lightning Locker Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.security_locker_service)
-
-### [Lightning Web Components Performance Best Practices](https://developer.salesforce.com/blogs/2020/06/lightning-web-components-performance-best-practices)
-
 ### Advantages of LWC over Aura / Why do we need LWCs if we had Aura
 1. **Standardization**
      - LWCs are built on top of web component that are natively supported by browsers. 
      - Because of this, the code that developer writes is already browser understandable and there is no need to transpile (convert) the code into browser understandable code. 
-     - As a result of this, it is also very easy to integrate LWCs with outside applications.
+     - As a result of this, it is also very easy to integrate LWCs with outside applications. Also, it makes debugging easier since code is rendered as is.
     
 2. **Performance**
     - Since there is no abstraction layer (transpiler), the LWCs are more likey to load faster and perform better compared to Aura components. 
@@ -118,15 +114,30 @@ The folder and its files must have the same name, including capitalization and u
    - This property makes LWCs more agile than Aura and saves lots of efforts. 
    - Give example of Knowledge details component on case record page. How we eliminated the need of apex. If interviewer asks why did not you use base LDS component then tell that Knowledge object was not supported by LDS base component.
 
+### [Lightning Locker Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.security_locker_service)
+
+
+## Advance Concepts
+1. [Lightning Web Securty](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.security_lwsec_architecture)
+2. [Shadow DOM](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_dom)
+3. [More Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom)
+
+### [Light DOM](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_light_dom)
+   The Light DOM is simply the plain old DOM tree inside a HTML element.
+   The term is only used in the context of web components to distinguish it from the Shadow DOM. I suppose the normal DOM was redefined as Light in contrast with    Shadow. 
+   
+### [Lightning Web Components Performance Best Practices](https://developer.salesforce.com/blogs/2020/06/lightning-web-components-performance-best-practices)
+
 ## Questions
 1. [Explain the component structure of LWC component](#component-structure)
-2. [What are the advantages of LDS?](#advantages-of-lds)
-3. How to communicate from parent LWC to child LWC? How to access the child variables and methods?
-4. How to communicate from parent LWC to grand child LWC?
-5. How to communicate from child LWC to parent lwc?
-6. How to communicate from child LWC to grand parent lwc?
-7. How to communicate between sibling LWCs?
-8. How to communicate between cousin LWCs?
+2. [What is LDS and what are the its advantages?](#advantages-of-lds)
+3. How to communicate from parent LWC to child LWC and grand child LWC? How to access the child variables and methods?
+4. How to communicate from child LWC to parent lwc and grand parent LWC? 
+5. How to communicate between sibling LWCs? How to communicate between cousin LWCs?
+6. Can you please explain LWC lifecycle and hooks?
+7. Explain lightning locker service.
+8. Explain lightning web security.
+9. Explain all LWC decorators and their usage.
 
 ## JavaScript
 
@@ -196,11 +207,8 @@ https://github.com/leonardomso/33-js-concepts
 1. actionFunction
 1. actionSupport
 1. actionPollar
+1. actionRegion
 1. StandardController
 1. CustomController
 1. Page Reference Class
-1. Extentions (Standard and Custom)
-
-
-
-
+6. Extentions (Standard and Custom)
