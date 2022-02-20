@@ -40,7 +40,7 @@ The folder and its files must have the same name, including capitalization and u
    - [Lightning Message Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel)
    - Custom Events
    - PubSub Limitations - can be accessed by components from other namespaces, cannot be used inside Visualforce
-   - Event propagation and phases
+   - [Event propagation and phases](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events_propagation)
    - [`lightning/empApi`](https://developer.salesforce.com/docs/component-library/bundle/lightning-emp-api/documentation)
 
 ### [Lightning Data Service](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.data_ui_api)
