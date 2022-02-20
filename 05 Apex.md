@@ -5,7 +5,7 @@
 
 ### Keywords (Frequently Used)
 
-1. [`with sharing`, `without sharing`, and `inherited sharing` - Link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_keywords_sharing.htm)
+1. [`with sharing`, `without sharing`, and `inherited sharing`](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_keywords_sharing.htm)
 
 ### Class Reference (Frequently Used)
 
