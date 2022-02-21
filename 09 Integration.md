@@ -1,5 +1,20 @@
 # Integration
 
+REST vs SOAP
+
+<table class="alt">
+<tr><th>No.</th><th>SOAP</th><th>REST</th></tr>
+<tr><td>1)</td><td>SOAP is a <strong>protocol</strong>.</td><td>REST is an <strong>architectural style</strong>.</td></tr>
+<tr><td>2)</td><td>SOAP stands for <strong>Simple Object Access Protocol</strong>.</td><td>REST stands for <strong>REpresentational State Transfer</strong>.</td></tr>
+<tr><td>3)</td><td>SOAP <strong>can't use REST</strong> because it is a protocol.</td><td>REST <strong>can use SOAP</strong> web services because it is a concept and can use any protocol like HTTP, SOAP.</td></tr>
+<tr><td>4)</td><td>SOAP <strong>uses services interfaces to expose the business logic</strong>.</td><td>REST <strong>uses URI to expose business logic</strong>.</td></tr>
+<tr><td>5)</td><td>SOAP <strong>defines standards </strong> to be strictly followed. </td><td>REST does not define too much standards like SOAP.</td></tr>
+<tr><td>6)</td><td>SOAP <strong>requires more bandwidth</strong> and resource than REST.</td><td>REST <strong>requires less bandwidth</strong> and resource than SOAP.</td></tr>
+<tr><td>7)</td><td>SOAP <strong>defines its own security</strong>.</td><td>RESTful web services <strong>inherits security measures</strong> from the underlying transport.</td></tr>
+<tr><td>8)</td><td>SOAP <strong>permits XML</strong> data format only.</td><td>REST <strong>permits different</strong> data format such as Plain text, HTML, XML, JSON etc.</td></tr>
+<tr><td>9)</td><td>SOAP is <strong>less preferred</strong> than REST.</td><td>REST <strong>more preferred</strong> than SOAP.</td></tr>
+</table>
+
 What are types of Integration?
     - Inbound
     - Outbound
@@ -9,6 +24,8 @@ Communication types -
     - Asynchronous
 
 What type of Integrations you should know?
+
+
 
 1. Workflow outbound messages - outbound
 1. Apex callouts (outbound) and Web Services (inbound)
