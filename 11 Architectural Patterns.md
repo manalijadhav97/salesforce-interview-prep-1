@@ -36,12 +36,32 @@ https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
    
    The decorator design pattern falls into the structural category, that deals with the actual structure of a class, whether is by inheritance, composition or both. The goal of this design is to modify an objects’ functionality at runtime without altering its structure.
    
+   In Salesforce context, you need to obtain or display temporary information on a LWC/Visualforce page that is not needed beyond the context of the interaction.
+   For example, you may have a specific requirement to show Accounts along with the sum of Amount of all related closed opportunities.
+   Now just for this specific requirement we will not create a new field on Account object since that would be an overkill. Instead, we will implement decorator pattern and create a new variable called opptyAmountSum which is temporary field (proxy field) in the Response class that will be calculated at run time based on the Account. Since we did not create a field on object, we did not change the structure and we also modified functionality at run time. So we successfully implemented Decorator pattern.
    
    
-   
-  - Facade – hides the complexity of the system and provides simple interface.
-  - Composite – lets you compose objects into tree structures and then work with these structures as if they were individual objects.
-  - Bulk State Transition – used to perform bulk actions efficiently based on change of state of one or more records.
+  ## Facade
+  hides the complexity of the system and provides simple interface (not be confused with interface class, here we mean literal interface, something to interact with).
+  
+  Example - 
+  Suppose you have a requirement of showing Contact details on a LWC. These details include First Name, Last Name, Account Name, Sum of all oppty amounts of parent account. Now for this we will need to create some Wrapper class and we will only get/calculate these details and assign them to wrapper class's members(variables)
+  In this use case Wrapper is nothing but Facade for our LWC. It hid all the complexity of calculating sum or other non required fields of Contact object and only provided simple interface with required details.
+  
+  
+ ## Composite
+ lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+ 
+ Example - 
+ Let's say we need order details. Now Order contains multiple things such as Order id, Customer info, Line Items, Shipment details etc. Futher, Customer contains many things such as Id, Name, Email etc. Line Item contains Product, quantity, total price etc. We can break Product further down into Product Name, Id, price etc. So the complex Order class is COMPOSED of sub parts and again these sub parts are composed of more smaller parts until there are no sub parts.
+ This is called as Composite Design patter.
+ 
+ ## Bulk State Transition
+ used to perform bulk actions efficiently based on change of state of one or more records.
+ 
+ Example - 
+ Write bulkified methods/code that can do a generic task and it should be very specific to particular requirement (it shuld be extensible)
+ Give example from this link - https://salesforcecookcode.wordpress.com/2021/02/28/bulk-state-transition/
 
 
 # [Apex Enterprise Patterns](https://www.apexhours.com/apex-enterprise-patterns/)
