@@ -27,7 +27,14 @@ https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
 # [Apex Design Patterns](https://salesforcecookcode.wordpress.com/2021/02/26/apex-design-patterns/)
   - Singleton – restricts the instantiation of a class to one “single” instance only within a single transaction context.
   - Strategy – lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
-  - Decorator – allow you to add new functionality to an existing object without altering its structure.
+  
+  ## Decorator
+   
+   The decorator design pattern falls into the structural category, that deals with the actual structure of a class, whether is by inheritance, composition or both. The goal of this design is to modify an objects’ functionality at runtime without altering its structure.
+   
+   
+   
+   
   - Facade – hides the complexity of the system and provides simple interface.
   - Composite – lets you compose objects into tree structures and then work with these structures as if they were individual objects.
   - Bulk State Transition – used to perform bulk actions efficiently based on change of state of one or more records.
