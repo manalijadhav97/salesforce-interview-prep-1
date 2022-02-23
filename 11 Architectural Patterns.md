@@ -4,6 +4,8 @@
 
 # [SOLID Principles](https://www.youtube.com/watch?v=yxf2spbpTSw)
 
+https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
+
 # [Apex Design Patterns](https://salesforcecookcode.wordpress.com/2021/02/26/apex-design-patterns/)
   - Singleton – restricts the instantiation of a class to one “single” instance only within a single transaction context.
   - Strategy – lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
