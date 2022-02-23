@@ -3,6 +3,24 @@
 # [interface vs abstract vs virtual](https://salesforceprofs.com/abstract-virtual-interface-in-apex/)
 
 # [SOLID Principles](https://www.youtube.com/watch?v=yxf2spbpTSw)
+  ## The Single Responsibility Principle
+   The Single Responsibility Principle states that a class should do one thing and therefore it should have only a single reason to change.
+   
+  ## Open-Closed Principle
+   The Open-Closed Principle requires that classes should be open for extension and closed to modification.
+   
+   Modification means changing the code of an existing class, and extension means adding new functionality.
+   
+  ## Liskov Substitution Principle
+   The Liskov Substitution Principle states that subclasses should be substitutable for their base classes.
+
+   This means that, given that class B is a subclass of class A, we should be able to pass an object of class B to any method that expects an object of class A and the method should not give any weird output in that case.
+   
+  ## Interface Segregation Principle
+   Segregation means keeping things separated, and the Interface Segregation Principle is about separating the interfaces.
+   
+  ## Dependency Inversion Principle
+   The Dependency Inversion principle states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.
 
 https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
 
