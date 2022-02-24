@@ -1,5 +1,10 @@
 # Object Oritented Concepts
 
+## Inheritance
+## Encapsulation
+## Polymorphism
+## Abstraction
+
 # [interface vs abstract vs virtual](https://salesforceprofs.com/abstract-virtual-interface-in-apex/)
 
 # [SOLID Principles](https://www.youtube.com/watch?v=yxf2spbpTSw)
