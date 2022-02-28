@@ -13,8 +13,8 @@
 
 1.  Database Class
 
-    - What is use case of savepoints?
-    - What is use case of SaveResults, UpdateResults, DeleteResults etc.
+    - What is the use case of savepoints?
+    - What is the use case of SaveResults, UpdateResults, DeleteResults etc.
 
 1.  System Class
 
@@ -61,50 +61,45 @@
    - Continuations (UI)
    - 
 ### Why to use Anyc process Scenarios
-Integrations to External Applications
-Long running processes
-Mixed DML Operations
-Large volume of data loads & transactions
+- Integrations to External Applications
+- Long running processes
+- Mixed DML Operations
+- Large volume of data loads & transactions
 
 
 ### Future Method
-A “set it and forget it” method
-Call it and the async job is launched
-No ability to monitor the job
-Cannot chain @future calls
-A public static method, decorated with @future
-Arguments: Primitives (Integer, String, etc.)
-Collections of primitives (List, Map, Set)
-NOT SObjects or Apex objects
-You can use JSON.serialize() and pass in a String
-Returns void
+- A “set it and forget it” method
+- Call it and the async job is launched
+- No ability to monitor the job
+- Cannot chain @future calls
+- A public static method, decorated with @future
+- Arguments: Primitives (Integer, String, etc.)
+- Collections of primitives (List, Map, Set)
+- NOT SObjects or Apex objects
+- You can use JSON.serialize() and pass in a String
+- Returns void
 
 
 ### Queueable Apex
-A class and method that can be added to the queue to be executed
-It’s monitorable and abortable
-It’s chainable
-A public class that implements the Queueable interface
-Includes an execute method that accepts only a QueueableContext parameter
-The execute method can access instance properties for the class
-Returns void
-Launch by calling System.enqueueJob(cls) with an instance of the class.
-Returns an AsyncApexJob Id
+- A class and method that can be added to the queue to be executed
+- It’s monitorable and abortable
+- It’s chainable
+- A public class that implements the Queueable interface
+- Includes an execute method that accepts only a QueueableContext parameter
+- The execute method can access instance properties for the class
+- Launch by calling System.enqueueJob(cls) with an instance of the class.
+- Returns an AsyncApexJob Id
 
 
 ### Batch Apex
 A technique designed specifically for:
-Processing large numbers of records
-Doing more work than can be done in a single transaction
-It’s monitorable and abortable
-A global class that implements the Database.Batchable interface
-Includes:
-
-Start method – identifies the scope (list of data to be processed)
-
-Execute method – processes a subset of the scoped records
-
-Finish method – does any post-job wrap-up
+- Processing large numbers of records
+- Doing more work than can be done in a single transaction
+- It’s monitorable and abortable
+- A global class that implements the Database.Batchable interface Includes:
+	- Start method – identifies the scope (list of data to be processed)
+	- Execute method – processes a subset of the scoped records
+	- Finish method – does any post-job wrap-up
 
 #### Additional interfaces:
 Database.Stateful
@@ -114,7 +109,9 @@ Launch by calling Database.executeBatch(cls) with an instance of the class and a
 Default scope size is 200
 Max scope size is 2,000
 Returns an AsyncApexJobId
-Schedulable Class
+
+
+### Schedulable Class
 A global class that implements the Schedulable interface
 Includes an execute method
 Schedule by calling
