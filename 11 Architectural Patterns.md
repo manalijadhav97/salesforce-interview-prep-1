@@ -1,9 +1,9 @@
 # Object Oritented Concepts
 
 ## Inheritance
-## Encapsulation
 ## Polymorphism
 ## Abstraction
+## Encapsulation
 
 # [interface vs abstract vs virtual](https://salesforceprofs.com/abstract-virtual-interface-in-apex/)
 
