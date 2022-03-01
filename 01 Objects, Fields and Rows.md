@@ -68,3 +68,8 @@ Limitations mentioned in above post are not valid anymore as the article is date
 [Custom Metadata Types vs Custom Settings](https://developer.salesforce.com/blogs/engineering/2017/10/platform-on-the-platform.html)
 
 <img src="https://d259t2jj6zp7qm.cloudfront.net/images/v1507175772-cmt_features_summer_17_jaqorx.png"/>
+
+
+You can add up to 300 fields per custom setting, unless your field limit for custom objects is lower than 300. If your custom objects field limit is lower than 300, your field limit for custom settings is equal to your custom objects field limit.
+You can’t share a custom setting object or record.
+No owner is assigned when a custom setting is created, so the owner can’t be changed.
