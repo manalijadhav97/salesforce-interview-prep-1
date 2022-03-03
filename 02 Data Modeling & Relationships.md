@@ -35,5 +35,5 @@ To convert lookup to the master-detail relationship you need to give parent reco
     - If we delete record B then in this case also child record C will be deleted.
     - If we delete record c then only C will be deleted , master record will not be deleted.
     - If child C has two Master record A and B, Where A is primary relation then Child record C will inherit the look and feel of Parent object A.
-3. 
+3. In a many-to-many relationship, a user can't delete a parent record if there are more than 200 junction object records associated with it and if the junction object has a roll-up summary field that rolls up to the other parent. To delete this object, manually delete junction object records until the count is fewer than 200.
 
